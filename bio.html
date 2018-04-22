@@ -4,17 +4,19 @@
         <meta charset="utf-8"> <!-- codificação de texto -->
         
         <link rel="icon" href="img/favicon.png">
+
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/site.css">
 
         <title>Biografia do Silvão</title>
     </head>
     <body>
         <main>
-            <h1>Sobre mim</h1> 
+            <h1 class="titulo-principal">Sobre mim</h1> 
 
-            <div>
+            <div class="conteudo">
                 <p> 
                     Moro em São Paulo mas atendo clientes do mundo todo. Sou conhecido por fazer produtos de <em>qualidade</em>, <em>durabilidade</em> e que <em>agregam valor</em> para meus clientes.
                     Trabalho usando a web como plataforma, ou seja, respiro HTML5, CSS3 e JavaScript (ou melhor: ECMASCript). Crio sites para todos, seguindo as principais diretivas de acessibilidade, responsividade e web semântica, sem descuidar da qualidade de código.
@@ -22,7 +24,7 @@
             
                 <h2>Como trabalho</h2> 
                 
-                <blockquote>
+                <blockquote class="recomendacao">
                     <p>João é o melhor desenvolvedor front-end com quem já trabalhei. Muito eficiente e muito capaz. Recomendo sem dúvidas!</p>
                     <cite>José Souza, Fiat</cite>
                 </blockquote>
@@ -38,7 +40,7 @@
                 
                 <h2>Experiência</h2> 
         
-                <blockquote>
+                <blockquote class="recomendacao">
                     <p>João domina as tecnologias como ninguém. Eu apresentava um problema, ele tinha na ponta da língua a solução mais adequada com as tecnologias mais recentes</p>
                     <cite>Manoel Santos, Petrobrás</cite>
                 </blockquote>
@@ -56,7 +58,7 @@
         </main>
         
         <img src="img/eu.jpg" alt="Foto do João da Silva">
-        <aside>
+        <aside class="navegacao-site">
             <h1>João da Silva</h1>
             <nav>
                 <ul>
@@ -67,9 +69,26 @@
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
+            <ul class="icones-redes-sociais">
+                <li>
+                    <a href="https://github.com/git-joaodasilva">
+                        <img src="img/github.png" alt="Ícone do Github"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/twitter-joaodasilva">
+                        <img src="img/twitter.png" alt="Ícone do Twitter"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://br.linkedin.com/pub/linkedin-joao-da-silva/32/4/508">
+                        <img src="img/linkedin.png" alt="Ícone do LinkeIn"/>
+                    </a>
+                </li>
+            </ul>
         </aside>
 
-        <footer>
+        <footer id="rodape-pagina">
             &copy; João da Silva 2018
         </footer>
 

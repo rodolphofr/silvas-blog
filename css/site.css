@@ -6,13 +6,14 @@ body {
     line-height: 1.5; /* espaçamento entre de linhas de texto */
 }
 
-main h1 {
+.titulo-principal {
     background-color: #851944;
     font-family: 'Open Sans Condensed', Arial, sans-serif;
     text-align: center;
     color: #FFFFFF;
     padding: 25px;
     border-bottom: 10px solid #000; 
+    font-size: 60px;
 }
  
 main a {
@@ -22,21 +23,26 @@ main a {
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 
 p {
     text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-blockquote, aside, footer {
-    /* espaçamento interno do conteúdo com relação a suas bordas */
+/* blockquote, footer {
+    espaçamento interno do conteúdo com relação a suas bordas 
     padding: 20px; 
-}
+} */
 
-blockquote {
+.recomendacao {
+    margin: 20px 40px 20px 40px;
     background-color: #D9E5E3;
     border: 10px solid #C2CCCA;
     width: 250px; /* largura */
+    padding: 20px;
 
     /* mudando a forma como o navegador mede a largura dos elementos 
        Por padrão, o navegador mede a largura ignorando padding e bordas (levando em consideração o conteúdo)
@@ -51,26 +57,21 @@ blockquote {
     border-right-color: #333;     
 }
 
-aside {
-    background-color: #3C1D3D;
-    color: #F2FFFC;
-}
-
 aside a {
     color: inherit;
     font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+}
+
+aside h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
 }
 
 nav a {
     color: #F2FFFC;
 }
 
-footer {
-    background-color: #000;
-    color: #F2FFFC;
-}
-
-main div {
+.conteudo {
     width: 720px;
     /* o proprio navegador redistribui o espaço que sobra a direita e a esquerda da div deixando-a no centro 
        margin-left: auto; 
@@ -79,4 +80,46 @@ main div {
        margin: 0 auto;
     */
     margin: auto;  /* margin controla o espaço entre os elementos */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+ 
+.icones-redes-sociais li {
+    display: inline-block;
+}
+
+#rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
+    padding: 20px;
+}
+
+article {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.navegacao-site {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 20px;
+    text-align: center;
+}
+
+.leia-mais {
+    font-size: 120%;
+    background-color: #E6E7E8;
+    text-align: center;
+    display: block; /* tag A já por default já é inline */
+    margin: 16px;
+    padding: 8px;
 }
