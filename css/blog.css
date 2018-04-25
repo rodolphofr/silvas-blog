@@ -1,0 +1,14 @@
+.post {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.leia-mais {
+    font-size: 120%;
+    background-color: #E6E7E8;
+    text-align: center;
+    display: block; /* tag A já por default já é inline */
+    margin: 16px;
+    padding: 8px;
+}

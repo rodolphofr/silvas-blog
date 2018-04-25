@@ -6,21 +6,15 @@ body {
     line-height: 1.5; /* espaçamento entre de linhas de texto */
 }
 
-.titulo-principal {
-    background-color: #851944;
-    font-family: 'Open Sans Condensed', Arial, sans-serif;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 25px;
-    border-bottom: 10px solid #000; 
-    font-size: 60px;
-    text-transform: uppercase;
+main {
+    float: left;
+    width: 85%;
+    padding-bottom: 80px;
 }
- 
+
 main a {
     color: #851944;
 }
-
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -33,46 +27,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* blockquote, footer {
-    espaçamento interno do conteúdo com relação a suas bordas 
-    padding: 20px; 
-} */
-
-.recomendacao {
-    margin: 20px 40px 20px 40px;
-    background-color: #D9E5E3;
-    border: 10px solid #C2CCCA;
-    width: 250px; /* largura */
-    padding: 20px;
-
-    /* mudando a forma como o navegador mede a largura dos elementos 
-       Por padrão, o navegador mede a largura ignorando padding e bordas (levando em consideração o conteúdo)
-       dizemos ao navegador que ele deve considerar padding e bordas nesse cálculo. 
-       Então o elemento diminui pois agora os 250 pixels que definimos de largura incluem 
-       os paddings e bordas do elemento.
-       
-       ** controla apenas como a largura e a altura de um elemento deve ser calculada.
-    */
-    box-sizing: border-box; 
-    border-bottom-color: #333;
-    border-right-color: #333;     
-}
-
-aside a {
-    color: inherit;
-    font-family: 'Open Sans Condensed', 'Arial', sans-serif;
-}
-
-aside h1 {
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
-nav a {
-    color: #F2FFFC;
-}
-
-.conteudo {
+.container {
     width: 720px;
     /* o proprio navegador redistribui o espaço que sobra a direita e a esquerda da div deixando-a no centro 
        margin-left: auto; 
@@ -85,12 +40,29 @@ nav a {
     padding-bottom: 30px;
 }
 
-strong {
-    font-weight: bold;
+.titulo-principal {
+    background-color: #851944;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 25px;
+    border-bottom: 10px solid #000; 
+    font-size: 60px;
+    text-transform: uppercase;
 }
 
-em {
-    font-style: italic;
+.navegacao-site a {
+    color: inherit;
+    font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+}
+
+.navegacao-site h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    color: #F2FFFC;
 }
  
 .icones-redes-sociais li {
@@ -101,32 +73,30 @@ em {
     background-color: #000;
     color: #F2FFFC;
     padding: 20px;
-}
-
-article {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .navegacao-site {
     background-color: #3C1D3D;
     color: #F2FFFC;
-    padding: 20px;
     text-align: center;
-}
-
-.leia-mais {
-    font-size: 120%;
-    background-color: #E6E7E8;
-    text-align: center;
-    display: block; /* tag A já por default já é inline */
-    margin: 16px;
-    padding: 8px;
+    float: right;
+    padding: 10px;
+    width: 15%;
+    position: absolute;
+    top: 310px;
+    right: 0;
 }
 
 .subtitulo {
+    font-weight: bold;
     text-transform: uppercase;
+    /* Como não queremos floats de nenhum lado dos subtítulos, usamos o valor both */
+    clear: both; 
 }
 
 .icones-redes-sociais a {
@@ -137,13 +107,34 @@ article {
 }
 
 .icone-github {
-    background-image: url(../img/github.png)
+    background-image: url(../img/icones-redesociais/github.png)
 }
 
 .icone-twitter {
-    background-image: url(../img/twitter.png)
+    background-image: url(../img/icones-redesociais/twitter.png)
 }
 
 .icone-linkein {
-    background-image: url(../img/linkedin.png)
+    background-image: url(../img/icones-redesociais/linkedin.png)
 }
+
+.imagem-autor {
+    /* position relative -> muda a posição do elemento de acordo com a posição original dele */
+    /* Quando falamos de posicionar elementos na página independentemente do resto do conteúdo, 
+       estamos falando de usar o valor absolute da propriedade position. Com ele, podemos colocar 
+       um elemento onde quisermos na página. */
+    position: absolute;
+    top: 0;
+    right: 0px;
+    float: right;
+}
+
+.imagem-autor, .navegacao-site {
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+/* blockquote, footer {
+    espaçamento interno do conteúdo com relação a suas bordas 
+    padding: 20px; 
+} */

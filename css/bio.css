@@ -1,0 +1,40 @@
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.recomendacao {
+    margin: 20px 40px 20px 40px;
+    background-color: #D9E5E3;
+    border: 10px solid #C2CCCA;
+    width: 250px; /* largura */
+    padding: 20px;
+
+    /* mudando a forma como o navegador mede a largura dos elementos 
+       Por padrão, o navegador mede a largura ignorando padding e bordas (levando em consideração o conteúdo)
+       dizemos ao navegador que ele deve considerar padding e bordas nesse cálculo. 
+       Então o elemento diminui pois agora os 250 pixels que definimos de largura incluem 
+       os paddings e bordas do elemento.
+       
+       ** controla apenas como a largura e a altura de um elemento deve ser calculada.
+    */
+    box-sizing: border-box; 
+    /* border-bottom-color: #333;
+    border-right-color: #333;      */
+}
+
+.recomendacao-fiat {
+    float: right;
+}
+
+.recomendacao-petrobras {
+    float: left;
+}
+
+.autor-citacao {
+    float: right;
+    font-style: italic;
+}
